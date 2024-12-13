@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:salesforceSans ;
+    src: url(./fonts/SalesforceSans-Regular\ \(1\).ttf);
+}
+@layer components{
+  .row{
+    @apply flex flex-wrap w-full
+  }
+}
+@layer utilities {
+    .clip-triangle {
+      clip-path:ellipse(80% 200% at 50% 200%);
+      height: 5rem;
+     margin-top: -2rem;
+    
+     z-index: -1;
+    }
+    .secondClip{
+      clip-path: ellipse(75% 100% at top);
+      background-color: #4a154b;
+      min-height: 370px;
+    }
+    .svgPosition {
+      position: absolute;
+      top: -17%;
+      right: 0%;
+      z-index: -1;
+    }
+ 
+  }
+
+  
